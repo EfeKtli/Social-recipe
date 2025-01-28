@@ -66,5 +66,7 @@ flutter run [https://github.com/EfeKtli/Social-recipe.git]
  ## Teşekkürler 
  - İstinye Üniversitesi'ne destekleri için teşekkür ederim.
 
+ ## Uygulamanın videolu hali
+
 
 
