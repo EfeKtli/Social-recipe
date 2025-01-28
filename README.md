@@ -64,7 +64,7 @@ flutter run [https://github.com/EfeKtli/Social-recipe.git]
  - istinye Üniversitesi: [https://www.istinye.edu.tr/tr]
  - Email : efekiratli1@gmail.com
  - İnstagram : efektli
-
+ - Git : [https://github.com/EfeKtli]
  ## Teşekkürler 
  - İstinye Üniversitesi'ne destekleri için teşekkür ederim.
 
