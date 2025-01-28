@@ -93,6 +93,13 @@ class LoginScreen extends StatelessWidget {
                       backgroundColor: colorScheme.error,
                     ),
                   );
+                } else if (password.length < 8) {
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(
+                      content: Text('Şifreniz 8 karakterden az.'),
+                      backgroundColor: colorScheme.error,
+                    ),
+                  );
                 } else {
                   Navigator.pushAndRemoveUntil(
                     context,
