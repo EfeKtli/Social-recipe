@@ -105,6 +105,13 @@ class RegisterScreen extends StatelessWidget {
                       backgroundColor: colorScheme.error, // Hata rengi
                     ),
                   );
+                } else if (password.length < 8) {
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(
+                      content: Text('Şifre 8 karakterden az.'),
+                      backgroundColor: colorScheme.error, // Hata rengi
+                    ),
+                  );
                 } else if (confirmPassword.isEmpty) {
                   ScaffoldMessenger.of(context).showSnackBar(
                     SnackBar(
