@@ -13,7 +13,9 @@
 ## Özellikler 
 - [Kullanıcı İstediği Yemek Taarifini Paylaşabilecek]
 - [Kullanıcı Kayıt Olabilecek]
-- [Kullanıcı İstediği Yemek Kategorisinden yemek seçebilecek ve tarifi beğenip paylaşabilecek]
+- [Kullanıcı İstediği Yemek Kategorisinden yemek seçip bu yemek tariflerine bakabilecek]
+- [Kullanıcı açık tema veya koyu tema kullanabilecek]
+
 
 ## Kullanılan Teknolojiler
 - Flutter
