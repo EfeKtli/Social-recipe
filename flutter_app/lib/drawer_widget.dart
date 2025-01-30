@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'categories_screen.dart';
+import 'package:go_router/go_router.dart';
 
 class CustomDrawer extends StatelessWidget {
   @override
@@ -28,31 +28,28 @@ class CustomDrawer extends StatelessWidget {
             leading: Icon(Icons.home),
             title: Text('Ev'),
             onTap: () {
-              Navigator.pop(context);
+              context.go('/home');
             },
           ),
           ListTile(
             leading: Icon(Icons.category),
             title: Text('Kategoriler'),
             onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => CategoriesScreen()),
-              );
+              context.go('/categories');
             },
           ),
           ListTile(
             leading: Icon(Icons.bookmark),
             title: Text('Kaydedilenler'),
             onTap: () {
-              Navigator.pop(context);
+              context.pop();
             },
           ),
           ListTile(
             leading: Icon(Icons.thumb_up_alt_outlined),
             title: Text('Beğenilenler'),
             onTap: () {
-              Navigator.pop(context);
+              context.pop();
             },
           ),
         ],

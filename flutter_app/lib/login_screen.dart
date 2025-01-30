@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'home_screen.dart'; // HomeScreen dosyasını ekleyin
-import 'register_screen.dart'; // RegisterScreen dosyasını ekleyin
+import 'package:go_router/go_router.dart'; // GoRouter için gerekli import
 
 class LoginScreen extends StatelessWidget {
   final TextEditingController _usernameController = TextEditingController();
@@ -101,11 +100,8 @@ class LoginScreen extends StatelessWidget {
                     ),
                   );
                 } else {
-                  Navigator.pushAndRemoveUntil(
-                    context,
-                    MaterialPageRoute(builder: (context) => HomeScreen()),
-                    (Route<dynamic> route) => false,
-                  );
+                  // GoRouter ile HomeScreen'e git ve tüm önceki rotaları temizle
+                  context.go('/home');
                 }
               },
               child: Text('Giriş Yap'),
@@ -118,10 +114,8 @@ class LoginScreen extends StatelessWidget {
             // Kayıt Ol Butonu
             TextButton(
               onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => RegisterScreen()),
-                );
+                // GoRouter ile RegisterScreen'e git
+                context.push('/register');
               },
               child: Text(
                 'Kayıt Ol',

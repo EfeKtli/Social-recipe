@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'home_screen.dart'; // HomeScreen dosyasını ekleyin
+import 'package:go_router/go_router.dart'; // GoRouter için gerekli import
 
 class RegisterScreen extends StatelessWidget {
   final TextEditingController _usernameController = TextEditingController();
@@ -127,11 +127,8 @@ class RegisterScreen extends StatelessWidget {
                     ),
                   );
                 } else {
-                  Navigator.pushAndRemoveUntil(
-                    context,
-                    MaterialPageRoute(builder: (context) => HomeScreen()),
-                    (Route<dynamic> route) => false,
-                  );
+                  // GoRouter ile HomeScreen'e git ve tüm önceki rotaları temizle
+                  context.go('/home');
                 }
               },
               child: Text('Kayıt Ol'),

@@ -6,7 +6,7 @@ const colors = {
   "secondary": Colors.brown,
   "onsecondary": Color.fromARGB(255, 32, 43, 54),
   "surface": Color.fromRGBO(255, 253, 208, 1.0),
-  "onsurface": Color.fromARGB(255, 0, 0, 25), // Alpha değeri düzeltildi
+  "onsurface": Color.fromARGB(255, 0, 0, 25),
   "success": Colors.green,
   "error": Colors.red,
 };
@@ -16,7 +16,7 @@ const darkColors = {
   "onprimary": Colors.white,
   "secondary": Color.fromARGB(210, 180, 140, 70),
   "onsecondary": Color.fromARGB(255, 255, 255, 255),
-  "surface": Color.fromARGB(255, 18, 18, 18), // Dark tema arka planı siyah
+  "surface": Color.fromARGB(255, 18, 18, 18),
   "onsurface": Color.fromARGB(255, 255, 255, 255),
   "success": Colors.green,
   "error": Colors.red,
@@ -33,16 +33,17 @@ final lightTheme = ThemeData(
     onSurface: colors["onsurface"]!,
     error: colors["error"]!,
   ),
-  scaffoldBackgroundColor: colors["surface"], // Light tema arka plan rengi
+  scaffoldBackgroundColor: colors["surface"],
   textTheme: TextTheme(
-    bodyMedium: TextStyle(color: colors["onsecondary"]), // Yazı rengi
-    titleLarge: TextStyle(color: colors["onprimary"]), // Başlık rengi
+    bodyMedium: TextStyle(color: colors["onsecondary"]),
+    titleLarge: TextStyle(color: colors["onprimary"]),
   ),
   appBarTheme: AppBarTheme(
-    backgroundColor: colors["primary"], // AppBar arka plan rengi
-    iconTheme: IconThemeData(color: colors["onprimary"]), // AppBar icon rengi
+    backgroundColor: colors["primary"],
+    iconTheme: IconThemeData(color: colors["onprimary"]),
     titleTextStyle: TextStyle(
-      color: colors["onprimary"], fontSize: 20, // AppBar başlık rengi
+      color: colors["onprimary"],
+      fontSize: 20,
     ),
   ),
   elevatedButtonTheme: ElevatedButtonThemeData(
@@ -64,17 +65,17 @@ final darkTheme = ThemeData(
     onSurface: darkColors["onsurface"]!,
     error: darkColors["error"]!,
   ),
-  scaffoldBackgroundColor: darkColors["surface"], // Dark tema arka plan rengi
+  scaffoldBackgroundColor: darkColors["surface"],
   textTheme: TextTheme(
-    bodyMedium: TextStyle(color: darkColors["onsecondary"]), // Yazı rengi
-    titleLarge: TextStyle(color: darkColors["onprimary"]), // Başlık rengi
+    bodyMedium: TextStyle(color: darkColors["onsecondary"]),
+    titleLarge: TextStyle(color: darkColors["onprimary"]),
   ),
   appBarTheme: AppBarTheme(
-    backgroundColor: darkColors["primary"], // AppBar arka plan rengi
-    iconTheme:
-        IconThemeData(color: darkColors["onprimary"]), // AppBar icon rengi
+    backgroundColor: darkColors["primary"],
+    iconTheme: IconThemeData(color: darkColors["onprimary"]),
     titleTextStyle: TextStyle(
-      color: darkColors["onprimary"], fontSize: 20, // AppBar başlık rengi
+      color: darkColors["onprimary"],
+      fontSize: 20,
     ),
   ),
   elevatedButtonTheme: ElevatedButtonThemeData(

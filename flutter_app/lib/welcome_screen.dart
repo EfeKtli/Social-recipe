@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'home_screen.dart';
+import 'package:go_router/go_router.dart'; // GoRouter için gerekli import
 
 class WelcomeScreen extends StatelessWidget {
   @override
@@ -73,11 +73,8 @@ class WelcomeScreen extends StatelessWidget {
                       SizedBox(height: 20),
                       ElevatedButton(
                         onPressed: () {
-                          Navigator.pushReplacement(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => HomeScreen()),
-                          );
+                          // GoRouter ile HomeScreen'e git
+                          context.go('/home');
                         },
                         style: ElevatedButton.styleFrom(
                           backgroundColor: Colors.orange[800],

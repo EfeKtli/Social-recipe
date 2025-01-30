@@ -37,10 +37,10 @@ class _SearchScreenState extends State<SearchScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final colorScheme = Theme.of(context).colorScheme; // colorScheme tanımlandı
+    final colorScheme = Theme.of(context).colorScheme; // Tema renklerini çek
 
     return Scaffold(
-      backgroundColor: colorScheme.surface, // Arka plan rengi düzeltildi
+      backgroundColor: colorScheme.surface, // Arka plan rengi
       appBar: AppBar(
         title: Text('Arama'),
         backgroundColor: colorScheme.primary, // AppBar arka plan rengi
@@ -49,23 +49,50 @@ class _SearchScreenState extends State<SearchScreen> {
         padding: const EdgeInsets.all(8.0),
         child: Column(
           children: [
+            // Arama Kutusu
             TextField(
               onChanged: (value) {
                 _filterItems(value);
               },
               decoration: InputDecoration(
                 labelText: 'Ara',
-                border: OutlineInputBorder(),
-                prefixIcon: Icon(Icons.search),
+                labelStyle:
+                    TextStyle(color: colorScheme.onSurface), // Label rengi
+                border: OutlineInputBorder(
+                  borderSide:
+                      BorderSide(color: colorScheme.primary), // Kenarlık rengi
+                ),
+                focusedBorder: OutlineInputBorder(
+                  borderSide: BorderSide(
+                      color:
+                          colorScheme.primary), // Odaklandığında kenarlık rengi
+                ),
+                prefixIcon: Icon(Icons.search,
+                    color: colorScheme.onSurface), // İkon rengi
               ),
+              style: TextStyle(color: colorScheme.onSurface), // Metin rengi
             ),
             SizedBox(height: 10),
+            // Filtrelenmiş Öğeler Listesi
             Expanded(
               child: ListView.builder(
                 itemCount: _filteredItems.length,
                 itemBuilder: (context, index) {
-                  return ListTile(
-                    title: Text(_filteredItems[index]),
+                  return Card(
+                    elevation: 2,
+                    margin: EdgeInsets.symmetric(vertical: 4),
+                    color: colorScheme.surfaceVariant, // Kart arka plan rengi
+                    child: ListTile(
+                      title: Text(
+                        _filteredItems[index],
+                        style: TextStyle(
+                            color: colorScheme.onSurface), // Metin rengi
+                      ),
+                      onTap: () {
+                        // Öğeye tıklandığında yapılacak işlemler
+                        // Örneğin, detay sayfasına yönlendirme yapılabilir
+                      },
+                    ),
                   );
                 },
               ),

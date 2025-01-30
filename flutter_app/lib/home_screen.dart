@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'settings_screen.dart'; // SettingsScreen dosyasını ekleyin
-import 'search_screen.dart'; // SearchScreen dosyasını ekleyin
-import 'drawer_widget.dart'; // CustomDrawer dosyasını ekleyin
-import 'login_screen.dart'; // LoginScreen dosyasını ekleyin
+import 'package:google_fonts/google_fonts.dart';
+import 'package:go_router/go_router.dart';
+import 'drawer_widget.dart';
 
 class HomeScreen extends StatelessWidget {
   @override
@@ -15,7 +14,9 @@ class HomeScreen extends StatelessWidget {
         backgroundColor: colorScheme.primary, // AppBar arka plan rengi
         title: Text(
           'Enfes Yemek Tarifleri',
-          style: TextStyle(color: colorScheme.onPrimary), // Başlık rengi
+          style: GoogleFonts.lobster(
+              color: colorScheme
+                  .onPrimary), // Google Fonts kullanarak başlık rengi
         ),
         actions: [
           IconButton(
@@ -31,13 +32,17 @@ class HomeScreen extends StatelessWidget {
           children: [
             Text(
               "Kategori:",
-              style: TextStyle(
-                  fontSize: 18, color: colorScheme.onSurface), // Metin rengi
+              style: GoogleFonts.roboto(
+                  fontSize: 18,
+                  color: colorScheme
+                      .onSurface), // Google Fonts kullanarak metin rengi
             ),
             Text(
               "Fit Yemek Kategorisi",
-              style: TextStyle(
-                  fontSize: 16, color: colorScheme.onSurface), // Metin rengi
+              style: GoogleFonts.roboto(
+                  fontSize: 16,
+                  color: colorScheme
+                      .onSurface), // Google Fonts kullanarak metin rengi
             ),
             const SizedBox(
               height: 20,
@@ -52,13 +57,14 @@ class HomeScreen extends StatelessWidget {
                         leading: Icon(Icons.restaurant,
                             color: colorScheme.onSurface), // İkon rengi
                         title: Text("Keyvan Aratesh:",
-                            style: TextStyle(
-                                color: colorScheme.onSurface)), // Metin rengi
+                            style: GoogleFonts.roboto(
+                                color: colorScheme
+                                    .onSurface)), // Google Fonts kullanarak metin rengi
                         subtitle: Text(
-                          "Bu kadar kod yazarken ve bu kadar öğrenciye ders verirken nasıl fit kaldığımı sanıyorsunuz? Tabiki kendi başıma keşfettiğim nefis ton balıklı salata tarifimle. Bu konuda çok iddialıyım şimdiden afiyet olsun :)",
-                          style: TextStyle(
-                              color: colorScheme.onSurface
-                                  .withOpacity(0.8)), // Metin rengi
+                          "Bu kadar kod yazarken ve bu kadar öğrenciye ders verirken nasıl fit kaldığımı sanıyorsunuz? Tabii ki kendi başıma keşfettiğim nefis ton balıklı salata tarifimle. Bu konuda çok iddialıyım şimdiden afiyet olsun :)",
+                          style: GoogleFonts.roboto(
+                              color: colorScheme.onSurface.withOpacity(
+                                  0.8)), // Google Fonts kullanarak metin rengi
                         ),
                       ),
                       Center(
@@ -94,13 +100,14 @@ class HomeScreen extends StatelessWidget {
                         leading: Icon(Icons.local_pizza,
                             color: colorScheme.onSurface), // İkon rengi
                         title: Text("Fitadam35:",
-                            style: TextStyle(
-                                color: colorScheme.onSurface)), // Metin rengi
+                            style: GoogleFonts.roboto(
+                                color: colorScheme
+                                    .onSurface)), // Google Fonts kullanarak metin rengi
                         subtitle: Text(
                           "Bu gün sizlerle beraber düşük kalorili pizza yapacağız",
-                          style: TextStyle(
-                              color: colorScheme.onSurface
-                                  .withOpacity(0.8)), // Metin rengi
+                          style: GoogleFonts.roboto(
+                              color: colorScheme.onSurface.withOpacity(
+                                  0.8)), // Google Fonts kullanarak metin rengi
                         ),
                       ),
                       Center(
@@ -136,13 +143,14 @@ class HomeScreen extends StatelessWidget {
                         leading: Icon(Icons.cake,
                             color: colorScheme.onSurface), // İkon rengi
                         title: Text("Sevim Üzerli:",
-                            style: TextStyle(
-                                color: colorScheme.onSurface)), // Metin rengi
+                            style: GoogleFonts.roboto(
+                                color: colorScheme
+                                    .onSurface)), // Google Fonts kullanarak metin rengi
                         subtitle: Text(
                           "Sizlere en sevdiğim fit kek tarifini paylaşıyorum :)",
-                          style: TextStyle(
-                              color: colorScheme.onSurface
-                                  .withOpacity(0.8)), // Metin rengi
+                          style: GoogleFonts.roboto(
+                              color: colorScheme.onSurface.withOpacity(
+                                  0.8)), // Google Fonts kullanarak metin rengi
                         ),
                       ),
                       Center(
@@ -178,8 +186,10 @@ class HomeScreen extends StatelessWidget {
               padding: const EdgeInsets.all(8.0),
               child: Text(
                 'Puan Vermeyi Unutmayınız :))',
-                style: TextStyle(
-                    fontSize: 16, color: colorScheme.secondary), // Metin rengi
+                style: GoogleFonts.roboto(
+                    fontSize: 16,
+                    color: colorScheme
+                        .secondary), // Google Fonts kullanarak metin rengi
               ),
             ),
           ],
@@ -193,30 +203,21 @@ class HomeScreen extends StatelessWidget {
           children: [
             GestureDetector(
               onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => LoginScreen()),
-                );
+                context.push('/login');
               },
               child: Icon(Icons.person,
                   color: colorScheme.onPrimary), // İkon rengi
             ),
             GestureDetector(
               onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => SearchScreen()),
-                );
+                context.push('/search');
               },
               child: Icon(Icons.search,
                   color: colorScheme.onPrimary), // İkon rengi
             ),
             GestureDetector(
               onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => SettingsScreen()),
-                );
+                context.push('/settings');
               },
               child: Icon(Icons.settings,
                   color: colorScheme.onPrimary), // İkon rengi
