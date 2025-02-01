@@ -75,7 +75,16 @@ flutter run [https://github.com/EfeKtli/Social-recipe.git]
   
 
 ## Ekran Görüntüsü
-![Screenshot_1732613835](https://github.com/user-attachments/assets/a89f40c7-2aea-476d-ad6c-82590f7e8e1f)
+![Image](https://github.com/user-attachments/assets/ae8f0051-f399-4db8-81cb-1ec0809090d3)
+![Image](https://github.com/user-attachments/assets/27add852-7665-4fb2-a2e5-dc0bf5adb839)
+
+![Image](https://github.com/user-attachments/assets/c450518d-44ec-4a29-a076-a7c4976825b5)
+![Image](https://github.com/user-attachments/assets/8e8c033c-9047-442c-a8fc-bb168231fbbd)
+
+![Image](https://github.com/user-attachments/assets/5b70c0df-c458-4ac3-b92c-a116e8264e71)
+![Image](https://github.com/user-attachments/assets/267d5ee3-5be7-4c7e-9f77-fb75c03a42d7)
+
+![Image](https://github.com/user-attachments/assets/cc0b407c-d20c-487c-8400-c93d53831c16)
 
 ## Demo Video
 https://github.com/user-attachments/assets/33231078-b39d-4c63-ad4d-783a74655ff4
