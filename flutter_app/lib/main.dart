@@ -1,13 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'package:go_router/go_router.dart';
-import 'themes.dart'; // Temalarınızı içe aktarın
-import 'welcome_screen.dart'; // WelcomeScreen dosyasını içe aktarın
+import 'themes.dart';
+import 'welcome_screen.dart';
 import 'home_screen.dart';
 import 'login_screen.dart';
 import 'register_screen.dart';
 import 'search_screen.dart';
 import 'settings_screen.dart';
 import 'categories_screen.dart';
+import 'recipes_screen.dart';
+import 'saved_recipes_screen.dart';
+import 'recipe_provider.dart';
 
 final GoRouter router = GoRouter(
   routes: [
@@ -39,11 +43,24 @@ final GoRouter router = GoRouter(
       path: '/categories',
       builder: (context, state) => CategoriesScreen(),
     ),
+    GoRoute(
+      path: '/recipes',
+      builder: (context, state) => RecipesScreen(),
+    ),
+    GoRoute(
+      path: '/saved_recipes',
+      builder: (context, state) => SavedRecipesScreen(),
+    ),
   ],
 );
 
 void main() {
-  runApp(MyApp());
+  runApp(
+    ChangeNotifierProvider(
+      create: (context) => RecipeProvider(),
+      child: MyApp(),
+    ),
+  );
 }
 
 class MyApp extends StatelessWidget {
@@ -52,9 +69,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp.router(
       debugShowCheckedModeBanner: false,
       title: 'Material App',
-      theme: lightTheme, // Light temayı kullan
-      darkTheme: darkTheme, // Dark temayı kullan
-      themeMode: ThemeMode.dark, // Tema modunu light yap
+      theme: lightTheme,
+      darkTheme: darkTheme,
+      themeMode: ThemeMode.dark, // Cihazın varsayılan tema ayarını kullan
       routerConfig: router,
     );
   }
