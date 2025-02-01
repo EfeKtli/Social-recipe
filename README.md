@@ -69,9 +69,6 @@ flutter run [https://github.com/EfeKtli/Social-recipe.git]
  - Git : [https://github.com/EfeKtli]
  ## Teşekkürler 
  - İstinye Üniversitesi'ne destekleri için teşekkür ederim.
-
- ## Uygulamanın Videolu hali
- - https://www.youtube.com/watch?v=3KpDrfZ43Ps
   
 
 ## Ekran Görüntüsü
@@ -87,4 +84,4 @@ flutter run [https://github.com/EfeKtli/Social-recipe.git]
 ![Image](https://github.com/user-attachments/assets/cc0b407c-d20c-487c-8400-c93d53831c16)
 
 ## Demo Video
-https://github.com/user-attachments/assets/33231078-b39d-4c63-ad4d-783a74655ff4
+[https://github.com/user-attachments/assets/33231078-b39d-4c63-ad4d-783a74655ff4](https://github.com/user-attachments/assets/af0c8d6c-c2a5-4d36-86fa-574c809544ab)
