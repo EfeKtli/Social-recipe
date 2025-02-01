@@ -42,7 +42,7 @@ class CustomDrawer extends StatelessWidget {
             leading: Icon(Icons.bookmark),
             title: Text('Kaydedilenler'),
             onTap: () {
-              context.pop();
+              context.go('/saved_recipes');
             },
           ),
           ListTile(
@@ -50,6 +50,13 @@ class CustomDrawer extends StatelessWidget {
             title: Text('Beğenilenler'),
             onTap: () {
               context.pop();
+            },
+          ),
+          ListTile(
+            leading: Icon(Icons.receipt),
+            title: Text('Tarifler'),
+            onTap: () {
+              context.go('/recipes');
             },
           ),
         ],

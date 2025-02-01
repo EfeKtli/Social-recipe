@@ -5,17 +5,17 @@ class CategoriesScreen extends StatelessWidget {
     {
       'name': 'Salatalar',
       'image':
-          'https://d17wu0fn6x6rgz.cloudfront.net/img/w/tarif/mgt/beyaz-peynirli-akdeniz-salatasi-4.webp',
+          'https://i.lezzet.com.tr/images-xxlarge-secondary/doyurucu-salata-tarifleri-d449ac4b-331c-4afe-a3ea-fb51b5863f6f',
     },
     {
       'name': 'Ana Yemekler',
       'image':
-          'https://www.rafinera.com/GetResizeImage?path=8dfffe9c-ccf3-4ec8-9c10-aa0ee6d99d16.jpg&width=340&height=340',
+          'https://i.lezzet.com.tr/images-xxlarge-recipe/sebzeli_et_sote-7b478893-0f24-43d7-be49-3a18eea61781.jpg',
     },
     {
       'name': 'Tatlılar',
       'image':
-          'https://www.uzaypastanesi.com/images/product/FRAMBUAZ-3_GORq.jpg',
+          'https://i.lezzet.com.tr/images-xxlarge-recipe/bayat_ekmek_tatlisi-60f6eddc-00e2-46f0-9c01-aebc9f949e7f.jpg',
     },
     {
       'name': 'Aperatifler',
@@ -25,7 +25,7 @@ class CategoriesScreen extends StatelessWidget {
     {
       'name': 'İçecekler',
       'image':
-          'https://www.canakkalekalem.com/images/haberler/2024/07/alkolsuz-kokteyl-tarifi-741.jpg',
+          'https://i.lezzet.com.tr/images-xxlarge-recipe/ev-yapimi-konsantre-limonata-01e50b99-5890-411f-a4c2-997a71e8a5cc.jpg',
     },
     {
       'name': 'Çorbalar',
@@ -39,11 +39,12 @@ class CategoriesScreen extends StatelessWidget {
     {
       'name': 'Atıştırmalıklar',
       'image':
-          'https://abp.com.tr/wp-content/uploads/2021/03/atistirmaliklar-1.jpg',
+          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6j5yHr_lihzovtRVShaj6vI8NbbSlphzNdQ&s',
     },
     {
       'name': 'Kahvaltılıklar',
-      'image': 'https://tasfirin.net/resimler/urunler/190.jpg',
+      'image':
+          'https://i.lezzet.com.tr/images-xxlarge-secondary/kolay-kahvalti-tarifleri-260cd3f0-2a1a-458e-b0ae-f0d9894f6b44',
     },
     {
       'name': 'Makarna',
