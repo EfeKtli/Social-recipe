@@ -72,6 +72,10 @@ flutter run [https://github.com/EfeKtli/Social-recipe.git]
 
  ## Uygulamanın Videolu hali
  - https://www.youtube.com/watch?v=3KpDrfZ43Ps
+  
 
 ## Ekran Görüntüsü
 ![Screenshot_1732613835](https://github.com/user-attachments/assets/a89f40c7-2aea-476d-ad6c-82590f7e8e1f)
+
+## Demo Video
+https://github.com/user-attachments/assets/33231078-b39d-4c63-ad4d-783a74655ff4
